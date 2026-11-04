@@ -90,3 +90,8 @@
   .la-cuerpo { padding: 0 1.25rem; }
   .la-vacio { font-size: 1.5rem; padding: 2rem 0; }
 }
+
+/* PDF pendiente: se ocultan sus enlaces hasta tener el archivo.
+   Para mostrarlos, copia el PDF a pdf/SALUD_MENTAL_y_ADICCIONES_SEPTIEMBRE.pdf y borra estas dos reglas. */
+a[href$="SALUD_MENTAL_y_ADICCIONES_SEPTIEMBRE.pdf"] { display: none !important; }
+li:has(> a[href$="SALUD_MENTAL_y_ADICCIONES_SEPTIEMBRE.pdf"]) { display: none !important; }

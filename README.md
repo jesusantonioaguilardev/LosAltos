@@ -15,7 +15,7 @@ El 2026-11-04 el servidor de saludlosaltos.com respondía 404 a todos los archiv
 
 ## Pendiente
 
-- `pdf/SALUD_MENTAL_y_ADICCIONES_SEPTIEMBRE.pdf`
+- `pdf/SALUD_MENTAL_y_ADICCIONES_SEPTIEMBRE.pdf` (hay que pedírselo al cliente; el servidor original ya no lo tiene). Mientras tanto, los enlaces "PDF" están ocultos con dos reglas al final de `css/paginas.css`: al agregar el archivo, borra esas reglas.
 
 Las páginas `about-us/`, `services/` y `gallery/` se reconstruyeron con los textos del sitio original, usando el mismo encabezado, pie y estilos del inicio (más `css/paginas.css`).
 
