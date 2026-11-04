@@ -8,3 +8,5 @@
 .pagina .lista { font-size: 1.25rem; list-style: disc; padding-left: 1.5rem; }
 .pagina .lista > li { padding-top: .5rem; }
 .pagina .sublista { font-size: 1.125rem; color: #4b5563; list-style: circle; padding-left: 1.5rem; margin-top: .5rem; }
+.pagina .foto { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+.pagina .foto-grupo { width: 100%; max-width: 64rem; display: block; margin: 0 auto 2.5rem; }

@@ -9,19 +9,16 @@ Copia estática de la página de inicio de https://saludlosaltos.com (Clínica d
 | `index.html` | HTML de la página de inicio tal como lo dibujó el navegador (guardado el 2026-11-04), sin los scripts de Vue |
 | `css/app.ec54f82e.css`, `css/chunk-vendors.3d5cf4b0.css` | Archivos originales, recuperados del Internet Archive (mismo hash que el sitio) |
 | `img/icons/favicon-32x32.png`, `manifest.json` | Originales, recuperados del Internet Archive |
-| `img/*.png` | **Imágenes de relleno** (dicen "FALTA IMAGEN") |
+| `img/*.webp` | Fotos de las instalaciones y del equipo entregadas por el cliente |
 
 El 2026-11-04 el servidor de saludlosaltos.com respondía 404 a todos los archivos y su certificado HTTPS estaba vencido, así que no se pudieron descargar los originales que faltan.
 
 ## Pendiente
 
-Reemplazar con los originales, usando **el mismo nombre**:
-
-- `img/heroImg.7af3cd1b.png`, `img/3.77e08757.png`, `img/guidePhoto.3dadaffc.png`, `img/medicalCenter.d37125ab.png`
-- `img/gallery1.3464c677.png` … `img/gallery6.e172d758.png`
 - `pdf/SALUD_MENTAL_y_ADICCIONES_SEPTIEMBRE.pdf`
+- Retratos de las personas 9 a 17 del equipo (`img/equipo-9.webp` … `img/equipo-17.webp`) y las fotos de grupo de cocina y paramédicos
 
-Las páginas `about-us/`, `services/` y `gallery/` se reconstruyeron con los textos del sitio original, usando el mismo encabezado, pie y estilos del inicio (más `css/paginas.css`). La galería usa las mismas imágenes de relleno.
+Las páginas `about-us/`, `services/` y `gallery/` se reconstruyeron con los textos del sitio original, usando el mismo encabezado, pie y estilos del inicio (más `css/paginas.css`).
 
 ## Limitaciones
 
