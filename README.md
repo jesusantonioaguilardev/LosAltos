@@ -28,6 +28,15 @@ Las páginas `about-us/`, `services/` y `gallery/` se reconstruyeron con los tex
 
 El sitio original es una app de Vue. Sin sus scripts, la página es estática: se ve igual; el buscador y el cambio de idioma se rehicieron en `js/sitio.js`, pero el menú móvil todavía no funciona.
 
+## Sitio nuevo (`nuevo/`)
+
+Rediseño moderno de una sola página con los mismos textos y fotos: `nuevo/index.html`, `nuevo/estilos.css` y `nuevo/sitio.js`.
+
+- Una sola tipografía (Manrope, de Google Fonts) y los colores del logo.
+- Secciones: portada, Nosotros, Servicios, Ingreso, Instalaciones, Ubicación, Equipo y Contacto.
+- Fotos en alta calidad tomadas del Drive del cliente (`nuevo/img/`), más los retratos del equipo.
+- Menú para celular, botón flotante de WhatsApp (662 468 4645) y mapa del centro médico.
+
 ## Ver en local
 
 ```bash
