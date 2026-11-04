@@ -56,5 +56,5 @@
 .flechas > li::before { content: "\27A4"; position: absolute; left: 0; top: .15em; font-size: .7em; color: var(--olivo); }
 .puntos { padding: .6rem 0 .4rem .6rem; }
 .puntos > li { color: var(--olivo); margin: .35rem 0; }
-.puntos > li::before { content: "\2022 "; }
+.puntos > li::before { content: "\2022"; margin-right: .3em; }
 .suelto { padding-left: .5rem; }
