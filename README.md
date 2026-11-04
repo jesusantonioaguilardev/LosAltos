@@ -19,9 +19,14 @@ El 2026-11-04 el servidor de saludlosaltos.com respondía 404 a todos los archiv
 
 Las páginas `about-us/`, `services/` y `gallery/` se reconstruyeron con los textos del sitio original, usando el mismo encabezado, pie y estilos del inicio (más `css/paginas.css`).
 
+## Buscador e idioma
+
+- La lupa del encabezado abre el buscador (`js/sitio.js`), que busca en el índice `js/indice.js`.
+- La bandera de Estados Unidos cambia el sitio a inglés y la de México lo regresa a español. Las traducciones están en `js/i18n.js` (texto en español → inglés) y el idioma elegido se guarda en el navegador.
+
 ## Limitaciones
 
-El sitio original es una app de Vue. Sin sus scripts, la página es estática: se ve igual, pero las partes interactivas (por ejemplo, el menú móvil) no funcionan.
+El sitio original es una app de Vue. Sin sus scripts, la página es estática: se ve igual; el buscador y el cambio de idioma se rehicieron en `js/sitio.js`, pero el menú móvil todavía no funciona.
 
 ## Ver en local
 

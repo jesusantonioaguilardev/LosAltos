@@ -58,3 +58,34 @@
 .puntos > li { color: var(--olivo); margin: .35rem 0; }
 .puntos > li::before { content: "\2022"; margin-right: .3em; }
 .suelto { padding-left: .5rem; }
+
+/* Buscador (ventana como la del sitio original) */
+.la-sin-scroll { overflow: hidden; }
+.la-buscador[hidden] { display: none; }
+.la-buscador { position: fixed; inset: 0; z-index: 60; display: flex; justify-content: center; align-items: flex-start; padding: 0 1rem; }
+.la-fondo { position: absolute; inset: 0; background: rgba(17, 24, 39, .45); }
+.la-panel { position: relative; width: 100%; max-width: 60rem; margin-top: 16vh; background: #fff; border-radius: .75rem;
+  box-shadow: 0 25px 50px -12px rgba(0,0,0,.35); overflow: hidden; display: flex; flex-direction: column; max-height: 76vh; }
+.la-cabeza { display: flex; align-items: center; gap: 1.25rem; padding: 2.1rem 1.9rem 2.1rem 2.5rem; border-bottom: 1px solid #e5e7eb; }
+.la-cerrar { color: #4b5563; padding: .25rem; border-radius: .375rem; line-height: 0; }
+.la-cerrar:hover { color: #111827; }
+.la-campo { flex: 1; font-size: 1.1rem; padding: .95rem 1rem; border: 1px solid #e5e7eb; border-radius: .5rem; outline: none; color: #111827; }
+.la-campo:focus { border-color: #7e8035; box-shadow: 0 0 0 2px rgba(126,128,53,.25); }
+.la-cuerpo { padding: 0 3.75rem; overflow-y: auto; border-bottom: 1px solid #e5e7eb; }
+.la-vacio { font-size: 2.25rem; color: #9ca3af; padding: 3.5rem 0; }
+.la-resultados { padding: 1rem 0; }
+.la-resultados li + li { border-top: 1px solid #f3f4f6; }
+.la-resultados a { display: block; padding: .9rem .5rem; border-radius: .5rem; }
+.la-resultados a:hover, .la-resultados a:focus { background: #edf0e5; outline: none; }
+.la-r-pagina { display: block; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: #7e8035; }
+.la-r-titulo { display: block; font-size: 1.2rem; font-weight: 600; color: #1f2937; }
+.la-r-texto { display: block; font-size: .95rem; color: #4b5563; margin-top: .15rem; }
+.la-resultados mark { background: #e4e7c9; color: inherit; border-radius: .15rem; }
+.la-pie { padding: 1.2rem 2rem; }
+.la-pie svg { height: 3.5rem; width: auto; }
+@media (max-width: 640px) {
+  .la-panel { margin-top: 4rem; }
+  .la-cabeza { padding: 1rem; }
+  .la-cuerpo { padding: 0 1.25rem; }
+  .la-vacio { font-size: 1.5rem; padding: 2rem 0; }
+}
