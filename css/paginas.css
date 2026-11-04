@@ -1,0 +1,10 @@
+/* Estilos de apoyo para las páginas internas (Nosotros, Galería, Servicios) */
+.pagina h1 { margin-bottom: 2rem; }
+.pagina h2 { margin-bottom: 1rem; }
+.pagina .texto { max-width: 56rem; }
+.pagina .texto p { margin-bottom: 1.25rem; }
+.pagina .rejilla { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); list-style: none; padding: 0; }
+.pagina .galeria li { aspect-ratio: 3 / 2; }
+.pagina .lista { font-size: 1.25rem; list-style: disc; padding-left: 1.5rem; }
+.pagina .lista > li { padding-top: .5rem; }
+.pagina .sublista { font-size: 1.125rem; color: #4b5563; list-style: circle; padding-left: 1.5rem; margin-top: .5rem; }

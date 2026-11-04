@@ -20,7 +20,8 @@ Reemplazar con los originales, usando **el mismo nombre**:
 - `img/heroImg.7af3cd1b.png`, `img/3.77e08757.png`, `img/guidePhoto.3dadaffc.png`, `img/medicalCenter.d37125ab.png`
 - `img/gallery1.3464c677.png` … `img/gallery6.e172d758.png`
 - `pdf/SALUD_MENTAL_y_ADICCIONES_SEPTIEMBRE.pdf`
-- Las páginas `services`, `about-us` y `gallery` (los enlaces del menú hacia ellas todavía no llevan a ningún lado)
+
+Las páginas `about-us/`, `services/` y `gallery/` se reconstruyeron con los textos del sitio original, usando el mismo encabezado, pie y estilos del inicio (más `css/paginas.css`). La galería usa las mismas imágenes de relleno.
 
 ## Limitaciones
 
