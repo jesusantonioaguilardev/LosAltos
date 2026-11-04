@@ -9,7 +9,7 @@ Copia estática de la página de inicio de https://saludlosaltos.com (Clínica d
 | `index.html` | HTML de la página de inicio tal como lo dibujó el navegador (guardado el 2026-11-04), sin los scripts de Vue |
 | `css/app.ec54f82e.css`, `css/chunk-vendors.3d5cf4b0.css` | Archivos originales, recuperados del Internet Archive (mismo hash que el sitio) |
 | `img/icons/favicon-32x32.png`, `manifest.json` | Originales, recuperados del Internet Archive |
-| `img/*.webp` | Fotos de las instalaciones y del equipo entregadas por el cliente |
+| `img/*.webp` | Fotos de las instalaciones y del equipo entregadas por el cliente. `cuadricula-2` (LosAltos-87.jpg) y `servicios-foto` (Los Altos-43.jpg) vienen del Drive del cliente. `clinica-exterior`, `cuadricula-3`, `guia-terapia` y `banner-*` están recortadas de capturas del sitio original porque no están en el Drive |
 
 El 2026-11-04 el servidor de saludlosaltos.com respondía 404 a todos los archivos y su certificado HTTPS estaba vencido, así que no se pudieron descargar los originales que faltan.
 
