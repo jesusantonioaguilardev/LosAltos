@@ -1,12 +1,60 @@
-/* Estilos de apoyo para las páginas internas (Nosotros, Galería, Servicios) */
-.pagina h1 { margin-bottom: 2rem; }
-.pagina h2 { margin-bottom: 1rem; }
-.pagina .texto { max-width: 56rem; }
-.pagina .texto p { margin-bottom: 1.25rem; }
-.pagina .rejilla { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); list-style: none; padding: 0; }
-.pagina .galeria li { aspect-ratio: 3 / 2; }
-.pagina .lista { font-size: 1.25rem; list-style: disc; padding-left: 1.5rem; }
-.pagina .lista > li { padding-top: .5rem; }
-.pagina .sublista { font-size: 1.125rem; color: #4b5563; list-style: circle; padding-left: 1.5rem; margin-top: .5rem; }
-.pagina .foto { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
-.pagina .foto-grupo { width: 100%; max-width: 64rem; display: block; margin: 0 auto 2.5rem; }
+/* Páginas internas (Nosotros, Galería, Servicios), igualadas a las capturas del sitio original */
+:root { --olivo: #7e8035; --olivo-oscuro: #3d441d; --crema: #edf0e5; }
+
+/* Encabezado con foto teñida */
+.banner { height: 230px; display: flex; align-items: center; background-color: var(--olivo-oscuro);
+  background-size: cover; background-position: right center; }
+.banner h1 { color: #fff; font-size: 3.25rem; line-height: 1.1; }
+
+/* Hojas decorativas de fondo */
+.hojas { position: absolute; width: 38rem; pointer-events: none; color: #dcdcc8; z-index: 0; }
+.hojas svg { width: 100%; height: auto; transform: none; opacity: .45; }
+.hojas svg path { fill: currentColor; }
+.hojas-derecha { right: -6rem; bottom: -4rem; }
+.hojas-izquierda { left: -14rem; top: 6rem; }
+.pagina-equipo, .pagina-galeria, .pagina-servicios { position: relative; overflow: hidden; }
+.pagina-equipo > div:not(.hojas), .pagina-galeria > div:not(.hojas), .pagina-servicios > div:not(.hojas) { position: relative; z-index: 1; }
+
+/* Nosotros */
+.pagina-intro { padding: 7rem 0 4rem; }
+.dos-columnas { display: grid; gap: 2rem; align-items: start; }
+@media (min-width: 1024px) { .dos-columnas { grid-template-columns: 1fr 1fr; } }
+.texto-nosotros { padding-top: 2.5rem; font-size: .95rem; line-height: 1.45; color: #374151; }
+.texto-nosotros p { margin-bottom: 1rem; }
+.texto-nosotros strong { color: #1f2937; }
+.foto-grupo { width: 100%; border-radius: .5rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,.1); }
+.pagina-equipo { padding: 3rem 0 6rem; }
+.pagina-equipo h2 { font-size: 2.25rem; margin-bottom: 2rem; }
+.equipo { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
+.equipo li { background: #fff; border-radius: .5rem; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
+.equipo img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; }
+.equipo .datos { padding: 1rem 1.25rem; }
+.equipo .nombre { display: block; font-size: 1.1rem; font-weight: 600; }
+.equipo .puesto { display: block; font-style: italic; color: #4b5563; }
+
+/* Galería: 4 columnas de fotos cuadradas */
+.pagina-galeria { padding: 7.25rem 0 6rem; }
+.galeria { display: grid; grid-template-columns: repeat(2, 1fr); gap: .6rem 1.5rem; }
+@media (min-width: 1024px) { .galeria { grid-template-columns: repeat(4, 1fr); column-gap: 6rem; padding: 0 2.75rem; } }
+.galeria img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: .5rem; display: block; }
+
+/* Servicios */
+.pagina-servicios { background: var(--crema); padding: 7.25rem 0 6rem; }
+.tarjeta { background: #fff; border-radius: .5rem; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.servicios-arriba { display: grid; gap: .9rem; align-items: start; }
+@media (min-width: 1024px) { .servicios-arriba { grid-template-columns: 1fr 33%; } }
+.servicios-arriba .tarjeta { padding: 1.5rem 1.6rem; }
+.servicios-arriba h2 { color: var(--olivo-oscuro); font-size: 1.65rem; margin-bottom: .9rem; }
+.servicios-arriba p { font-size: 1.22rem; line-height: 1.45; color: #374151; margin-bottom: .9rem; }
+.foto-servicios { width: 100%; border-radius: .5rem; object-fit: cover; }
+.listas { margin-top: 2rem; padding: 1.5rem 1.25rem; display: grid; gap: 1rem; font-size: .9rem; }
+@media (min-width: 1024px) { .listas { grid-template-columns: 1fr 1fr; gap: 2.5rem; } }
+.listas h3 { font-family: Georgia, serif; font-weight: 700; font-size: 1.05rem; color: #2d3017; margin: .2rem 0 .6rem; }
+.listas h3.separado { margin-top: 3.5rem; }
+.flechas { padding-left: .5rem; }
+.flechas > li { position: relative; padding-left: 1rem; margin: .45rem 0; color: #1f2937; }
+.flechas > li::before { content: "\27A4"; position: absolute; left: 0; top: .15em; font-size: .7em; color: var(--olivo); }
+.puntos { padding: .6rem 0 .4rem .6rem; }
+.puntos > li { color: var(--olivo); margin: .35rem 0; }
+.puntos > li::before { content: "\2022 "; }
+.suelto { padding-left: .5rem; }
