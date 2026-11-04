@@ -16,7 +16,6 @@ El 2026-11-04 el servidor de saludlosaltos.com respondía 404 a todos los archiv
 ## Pendiente
 
 - `pdf/SALUD_MENTAL_y_ADICCIONES_SEPTIEMBRE.pdf`
-- Retratos de las personas 9 a 17 del equipo (`img/equipo-9.webp` … `img/equipo-17.webp`) y las fotos de grupo de cocina y paramédicos
 
 Las páginas `about-us/`, `services/` y `gallery/` se reconstruyeron con los textos del sitio original, usando el mismo encabezado, pie y estilos del inicio (más `css/paginas.css`).
 
